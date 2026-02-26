@@ -1,0 +1,43 @@
+{
+  "name": "AccountBalance",
+  "type": "object",
+  "properties": {
+    "account_balance": {
+      "type": "number",
+      "description": "Aktueller Kontostand in Euro"
+    },
+    "portfolio_balance": {
+      "type": "number",
+      "description": "Aktueller Depotstand in Euro"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Letzte Aktualisierung"
+    },
+    "account_color": {
+      "type": "string",
+      "default": "indigo",
+      "description": "Farbe f\u00fcr Kontostand-Karte"
+    },
+    "portfolio_color": {
+      "type": "string",
+      "default": "purple",
+      "description": "Farbe f\u00fcr Depotstand-Karte"
+    },
+    "income_color": {
+      "type": "string",
+      "default": "emerald",
+      "description": "Farbe f\u00fcr Einnahmen-Karte"
+    },
+    "expense_color": {
+      "type": "string",
+      "default": "rose",
+      "description": "Farbe f\u00fcr Ausgaben-Karte"
+    }
+  },
+  "required": [
+    "account_balance",
+    "portfolio_balance"
+  ]
+}
